@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>卡网商店 - 正规卡密交易平台</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+        body {
+            background-color: #121212;
+            color: #fff;
+            min-height: 100vh;
+            padding-bottom: 50px;
+        }
+        /* 头部导航+个人信息 */
+        .header {
+            background-color: #1f1f1f;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 2px solid #3a86ff;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+        .user-info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 2px solid #3a86ff;
+            object-fit: cover;
+        }
+        .user-name {
+            font-size: 18px;
+            font-weight: bold;
+            color: #3a86ff;
+        }
+        .shop-title {
+            font-size: 22px;
+            font-weight: bold;
+            background: linear-gradient(90deg, #3a86ff, #8338ec);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        /* 商品容器 */
+        .goods-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 30px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        /* 商品卡片 */
+        .goods-card {
+            background-color: #1f1f1f;
+            border-radius: 10px;
+            padding: 20px;
+            border: 1px solid #333;
+            transition: all 0.3s;
+        }
+        .goods-card:hover {
+            transform: translateY(-5px);
+            border-color: #3a86ff;
+            box-shadow: 0 0 15px rgba(58, 134, 255, 0.3);
+        }
+        .goods-name {
+            font-size: 19px;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+        .goods-desc {
+            font-size: 14px;
+            color: #ccc;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+        .goods-price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff006e;
+            margin-bottom: 20px;
+        }
+        .buy-btn {
+            display: block;
+            width: 100%;
+            padding: 12px 0;
+            background: linear-gradient(90deg, #3a86ff, #8338ec);
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .buy-btn:hover {
+            opacity: 0.9;
+            box-shadow: 0 0 10px rgba(58, 134, 255, 0.5);
+        }
+        /* 底部说明 */
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 13px;
+            color: #666;
+        }
+        /* 适配手机端 */
+        @media (max-width: 768px) {
+            .shop-title {
+                font-size: 18px;
+            }
+            .user-name {
+                font-size: 16px;
+            }
+            .avatar {
+                width: 40px;
+                height: 40px;
+            }
+            .goods-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 头部 -->
+    <div class="header">
+        <div class="user-info">
+            <!-- 头像：使用你指定的文件名 -->
+            <img src="Screenshot_20260105_000125_com.ss.android.ugc.aweme_edit_4779401321144.jpg" alt="店主头像" class="avatar">
+            <span class="user-name">卡网店主</span>
+        </div>
+        <div class="shop-title">XX卡网 - 秒发卡密</div>
+    </div>
+
+    <!-- 商品展示区 -->
+    <div class="goods-container">
+        <!-- 商品1 -->
+        <div class="goods-card">
+            <h3 class="goods-name">通用会员周卡</h3>
+            <p class="goods-desc">全平台通用/秒发卡密/售后无忧/可查有效期</p>
+            <div class="goods-price">¥9.9</div>
+            <button class="buy-btn" onclick="alert('下单成功，卡密将发送至您的聊天窗口！')">立即购买</button>
+        </div>
+        <!-- 商品2 -->
+        <div class="goods-card">
+            <h3 class="goods-name">通用会员月卡</h3>
+            <p class="goods-desc">全平台通用/秒发卡密/售后无忧/可查有效期</p>
+            <div class="goods-price">¥29.9</div>
+            <button class="buy-btn" onclick="alert('下单成功，卡密将发送至您的聊天窗口！')">立即购买</button>
+        </div>
+        <!-- 商品3 -->
+        <div class="goods-card">
+            <h3 class="goods-name">专属季卡套餐</h3>
+            <p class="goods-desc">专属通道/稳定不掉/赠额外福利/一对一售后</p>
+            <div class="goods-price">¥79.9</div>
+            <button class="buy-btn" onclick="alert('下单成功，卡密将发送至您的聊天窗口！')">立即购买</button>
+        </div>
+        <!-- 商品4 -->
+        <div class="goods-card">
+            <h3 class="goods-name">永久会员权限</h3>
+            <p class="goods-desc">终身使用/全平台解锁/专属客服/免费更新</p>
+            <div class="goods-price">¥199</div>
+            <button class="buy-btn" onclick="alert('下单成功，卡密将发送至您的聊天窗口！')">立即购买</button>
+        </div>
+    </div>
+
+    <!-- 底部 -->
+    <div class="footer">
+        本商店为正规卡密交易平台 | 所有卡密一经发出，非质量问题不退换 | 售后联系店主头像私信
+    </div>
+
+    <script>
+        // 可选：头像加载失败时显示默认图
+        document.querySelector('.avatar').onerror = function() {
+            this.src = "https://picsum.photos/50/50";
+            this.alt = "默认头像";
+        }
+    </script>
+</body>
+</html>
